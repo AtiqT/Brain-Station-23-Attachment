@@ -1,40 +1,31 @@
-Coding challenge 1:
+const hasDriverL = true;
+const hasGoodV = false;
+console.log (hasDriverL && hasGoodV);
+console.log (hasDriverL || hasGoodV);
 
-const MarkMass = 50;
-const JohnMass = 65;
-const MarkH = 5;
-const JohnH = 5;
-
-const MarkBMI = MarkMass / (MarkH * MarkH);
-const JohnBMI = JohnMass / (JohnH * JohnH);
-const markHigherBMI = MarkBMI > JohnBMI;
-console.log(MarkBMI, JohnBMI, markHigherBMI);
-
-013:
-const age = 12;
-const old = age >= 18;
-
-if(old)
-{
-    console.log('allowed!', old);
-}
-else
-{
-    console.log('Not allowed!', old);
+const shouldDrive = hasDriverL && hasGoodV;
+if(shouldDrive) {
+    console.log("Sarah can drive");
+}else {
+    console.log("cant drive");
 }
 
-Coding challenge 2:
+//Coding Challenge#3:
+const DolphineAvg = (96 + 108 + 89) / 3;
+const KoalasAvg = (88 + 91 + 110) / 3;
 
-const MarkMass = 50;
-const JohnMass = 65;
-const MarkH = 5;
-const JohnH = 7;
+console.log(DolphineAvg);
+console.log(KoalasAvg);
 
-const MarkBMI = MarkMass / (MarkH * MarkH);
-const JohnBMI = JohnMass / (JohnH * JohnH);
-if (MarkBMI > JohnBMI) {
-    console.log('Mark BMI(${MarkBMI}) is Higher than John');
+if(DolphineAvg > KoalasAvg) {
+    console.log("Dolphine win");
+} else if(KoalasAvg > DolphineAvg){
+    console.log("Koalas win");
+}else {
+    console.log("Draw");
 }
-else{
-    console.log('Johns BMI is Higher than Mark')
-}
+
+//coding Challenge#4:
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(tip, bill + tip);
